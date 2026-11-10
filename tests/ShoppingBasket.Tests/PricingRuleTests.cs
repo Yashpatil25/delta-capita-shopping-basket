@@ -33,4 +33,8 @@ public class PricingRuleTests
         Assert.Throws<ArgumentOutOfRangeException>(() => new UnitPriceRule(35).Price(-1));
         Assert.Throws<ArgumentOutOfRangeException>(() => MultiBuyRule.ThreeForTwo(15).Price(-1));
     }
+
+    [Fact]
+    public void Price_overflow_throws_instead_of_wrapping() =>
+        Assert.Throws<OverflowException>(() => new UnitPriceRule(35).Price(int.MaxValue));
 }
