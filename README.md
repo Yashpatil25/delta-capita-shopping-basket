@@ -1,5 +1,7 @@
 # Shopping Basket
 
+[![CI](https://github.com/Yashpatil25/delta-capita-shopping-basket/actions/workflows/ci.yml/badge.svg)](https://github.com/Yashpatil25/delta-capita-shopping-basket/actions/workflows/ci.yml)
+
 A small C# library that prices a basket of shopping, with a console front end and an xUnit test suite. Built for the Delta Capita technical test.
 
 > Items are presented one at a time, in a list, identified by name. Apples are 35p, bananas 20p, melons 50p (buy one get one free) and limes 15p (three for the price of two). Given a list of shopping, calculate the total cost.
